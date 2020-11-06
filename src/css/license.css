@@ -1,0 +1,31 @@
+.container-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container-form .brand {
+  width: 400px;
+}
+.container-form .form-group {
+  width: 550px;
+  margin: 5 auto;
+}
+.container-form .form-group label {
+  color: #ffff;
+  font-weight: 600;
+}
+.container-form .form-group textarea {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100px;
+}
+.container-form .form-group button {
+  background-color: #262C58;
+  color: #ffff;
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=license.css.map */

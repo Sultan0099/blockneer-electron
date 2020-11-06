@@ -1,0 +1,21 @@
+{
+  "name": "blockneer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch:sass": "sass --watch src/scss:src/css"
+  },
+  "author": "Sultan Ali",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1",
+    "electron-reloader": "^1.0.1",
+    "sass": "^1.29.0"
+  },
+  "dependencies": {
+    "electron-is-dev": "^1.2.0"
+  }
+}

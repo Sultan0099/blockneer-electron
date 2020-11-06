@@ -1,0 +1,46 @@
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-form .brand {
+  width: 300px;
+}
+.container-form .register-form {
+  width: 550px;
+}
+.container-form .register-form .form-group label {
+  color: #ffff;
+  font-size: 20px !important;
+}
+.container-form .register-form .form-group input {
+  height: 60px;
+  border-radius: 15px;
+  outline: none;
+}
+.container-form .register-form .form-group input::placeholder {
+  color: #CFCFCF;
+  font-size: 16px !important;
+}
+.container-form .register-form button {
+  background-color: #262C58;
+  color: #ffff;
+  height: 60px;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.container-form a {
+  text-decoration: none;
+  color: #FFC107;
+  font-weight: 600;
+  border-bottom: 2px solid #FFC107;
+  padding: 0 5px;
+}
+
+.divider {
+  padding: 15px;
+  border-right: 2px solid #FFC107;
+}
+
+/*# sourceMappingURL=register.css.map */

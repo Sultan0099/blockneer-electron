@@ -1,0 +1,92 @@
+body {
+  background-color: #454C78;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h1, .h1 {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  font-size: 35px !important;
+}
+
+h2, .h2 {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  font-size: 26px !important;
+}
+
+h3, .h3 {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.title {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  font-size: 16px !important;
+}
+
+.caption {
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+  font-size: 14px !important;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", sans-serif !important;
+}
+
+.btn {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: #262C58;
+  border-color: #262C58;
+}
+
+.btn-primary {
+  background-color: #262C58;
+  border-color: #262C58;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #454C78;
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-clm {
+  flex-direction: column;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
