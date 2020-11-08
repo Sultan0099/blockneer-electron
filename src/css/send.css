@@ -1,0 +1,207 @@
+.main {
+  height: 100vh;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.main nav {
+  width: 100%;
+}
+.main main {
+  height: 88vh;
+  position: relative;
+  display: flex;
+}
+.main main aside {
+  width: 180px;
+  min-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #262C58;
+  border-top-right-radius: 25px;
+}
+.main main section {
+  width: 90%;
+  height: 100%;
+}
+
+.brand {
+  width: 160px;
+}
+
+.navbar-right {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.divider {
+  margin: 10px;
+  width: 2px;
+  height: 30px;
+  background-color: #ffff;
+}
+
+.tab-btn {
+  background-color: #454C78;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+.tab-btn img {
+  width: 25px;
+  height: 25px;
+}
+.tab-btn:hover {
+  background-color: #262C58;
+}
+
+.profile {
+  min-width: 180px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .avatar-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #ffff;
+  overflow: hidden;
+  background: url("../assets/men.png");
+  background-size: cover;
+  background-position: center;
+}
+.profile .name {
+  color: #ffff;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.profile .dropdown {
+  width: 15px;
+  height: 15px;
+  background: url("../assets/icons/caret-down.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .aside-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 10px;
+  padding-left: 18px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  align-items: center;
+}
+.sidebar .aside-btn:hover {
+  text-decoration: none;
+}
+.sidebar .aside-btn .aside-btn-icon {
+  width: 30px;
+  margin-right: 10px;
+}
+.sidebar .aside-btn .aside-btn-text {
+  font-size: 14px !important;
+  color: white;
+}
+
+.active {
+  background-color: #454C78;
+}
+
+.send-container {
+  flex-wrap: nowrap;
+}
+.send-container .left {
+  box-sizing: border-box;
+  padding: 70px;
+  padding-top: 50px;
+  width: 550px !important;
+  min-width: 550px !important;
+}
+.send-container .left .form-group {
+  margin-bottom: 50px;
+}
+.send-container .left label {
+  font-size: 20px !important;
+  color: #ffff;
+  font-weight: 500;
+}
+.send-container .left input {
+  height: 60px;
+}
+.send-container .left textarea {
+  height: 170px;
+}
+.send-container .left button {
+  background-color: #262C58;
+  color: #FFC107;
+  font-weight: 600;
+  height: 60px;
+  margin-top: -15px;
+}
+.send-container .right {
+  padding-top: 50px;
+}
+.send-container .right p {
+  font-size: 20px !important;
+  color: #ffff;
+  font-weight: 500;
+}
+.send-container .right h1 {
+  color: #FFC107;
+  font-size: 70px !important;
+  font-weight: 600;
+}
+.send-container .right .btn-action-group {
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.send-container .right .btn-action-group button {
+  width: 350px;
+  height: 60px;
+  font-size: 20px !important;
+}
+.send-container .right .btn-action-group .btn-1 {
+  background-color: #FFC107;
+  color: #ffff;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+.send-container .right .btn-action-group .btn-2 {
+  background-color: #262C58;
+  color: #ffff;
+  font-weight: 600;
+}
+.send-container .right .btn-action-group .btn-2 img {
+  width: 25px;
+  margin-left: 15px;
+}
+
+/*# sourceMappingURL=send.css.map */

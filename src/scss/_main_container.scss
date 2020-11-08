@@ -1,0 +1,35 @@
+.main { 
+    height: 100vh ;
+    position: relative;
+    margin : 0 !important; 
+    padding : 0 !important; 
+    overflow: hidden;
+    nav { 
+        width : 100% ; 
+    }  
+    main { 
+        height: 88vh ;
+        position: relative;
+        display : flex ;
+        aside { 
+            width: 180px ;
+            min-width: 180px ; 
+            display : flex ;
+            justify-content: space-between ; 
+            box-sizing: border-box;
+            padding-left: 10px ;
+            padding-right: 10px ;
+            padding-top : 50px ; 
+            top : 0 ; 
+            left: 0 ;
+            height: 100% ;
+            background-color: $secondary ;
+            border-top-right-radius: 25px ;
+        }
+        section { 
+            width : 90% ; 
+            // background-color: red ;
+            height: 100% ;
+        }
+    } 
+}

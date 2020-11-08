@@ -1,0 +1,68 @@
+.brand { 
+    width : 160px ; 
+}
+.navbar-right { 
+    height: 100%  ;
+    // background-color: pink ;
+    display : flex ;
+    justify-content: flex-end;
+    align-items: center ;
+}
+
+.divider { 
+    margin : 10px ; 
+    width : 2px ;
+    height: 30px ;
+    background-color :  $white ; 
+}
+.tab-btn { 
+    background-color :  $primary ; 
+    padding : 10px ;
+    border-radius: 5px ;
+    margin-right: 10px;
+    transition : 0.2s ; 
+    img { 
+        width : 25px ; 
+        height: 25px ;
+    }
+    &:hover {
+        background-color :  $secondary ; 
+    }
+}
+
+.profile { 
+    min-width : 180px ; 
+    height: 100% ;
+    background-color :  rgba($white , 0.6 ) ; 
+    border-radius: 50px ;
+    padding : 5px ; 
+    margin-right:10px ; 
+    display : flex ;
+    justify-content:space-between ; 
+    align-items: center ;
+    .avatar-wrapper { 
+        width : 40px ;
+        height : 40px ; 
+        border-radius: 25px ; 
+        background-color : $white ; 
+        overflow: hidden;
+        background : url('../assets/men.png');
+        background-size: cover ;
+        background-position: center ;
+    }
+    .name { 
+        color : $white ; 
+        font-weight: 500 ;
+        margin-right:15px ; 
+    }
+    .dropdown { 
+        width : 15px ; 
+        height: 15px ;
+        background : url('../assets/icons/caret-down.png');
+        background-size: contain ;
+        background-position: center ;
+        background-repeat: no-repeat;
+        margin-right: 5px ;
+    }
+}
+

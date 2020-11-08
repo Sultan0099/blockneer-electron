@@ -1,0 +1,84 @@
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-form .brand {
+  width: 300px;
+}
+.container-form a {
+  text-decoration: none;
+  color: #FFC107;
+  font-weight: 600;
+  border-bottom: 2px solid #FFC107;
+  padding: 0 5px;
+}
+
+.register-form {
+  width: 100%;
+}
+.register-form .form-group label {
+  color: #ffff;
+  font-size: 20px !important;
+}
+.register-form .form-group input {
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+}
+.register-form .form-group input::placeholder {
+  color: #CFCFCF;
+  font-size: 16px !important;
+}
+.register-form button {
+  background-color: #262C58;
+  color: #ffff;
+  height: 60px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.pincode-container p {
+  color: #ffff;
+  font-weight: 600;
+}
+.pincode-container .pincode-form {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+.pincode-container .pincode-form .pincode-input {
+  width: 60px;
+  height: 70px;
+  background-color: #ffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 40px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.pincode-container button {
+  background-color: #262C58;
+  color: #ffff;
+  height: 60px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.divider {
+  border-right: 2px solid #ffff;
+}
+
+.col-6 {
+  padding: 25px;
+}
+
+.container-form-row {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=login.css.map */

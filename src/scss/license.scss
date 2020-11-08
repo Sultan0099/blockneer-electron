@@ -1,0 +1,35 @@
+@import './variables';
+
+.container-form { 
+    // background-color: black ; 
+    display : flex ; 
+    justify-content:center ; 
+    flex-direction: column ;
+    align-items: center ;
+    .brand  { 
+        width : 400px 
+    }
+
+    .form-group{
+        width: 550px ;
+        margin: 5 auto;
+        label{ 
+            color : $white ;
+            font-weight: 600 ;
+        }
+        textarea { 
+            margin-top : 20px ; 
+            margin-bottom: 10px ;
+            width : 100% ; 
+            height: 100px ;
+        }
+        button { 
+            background-color: $secondary ;
+            color : $white ; 
+            outline : none ; 
+            border : none ; 
+        }
+    }
+
+}
+

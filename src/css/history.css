@@ -1,0 +1,216 @@
+.main {
+  height: 100vh;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.main nav {
+  width: 100%;
+}
+.main main {
+  height: 88vh;
+  position: relative;
+  display: flex;
+}
+.main main aside {
+  width: 180px;
+  min-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #262C58;
+  border-top-right-radius: 25px;
+}
+.main main section {
+  width: 90%;
+  height: 100%;
+}
+
+.brand {
+  width: 160px;
+}
+
+.navbar-right {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.divider {
+  margin: 10px;
+  width: 2px;
+  height: 30px;
+  background-color: #ffff;
+}
+
+.tab-btn {
+  background-color: #454C78;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+.tab-btn img {
+  width: 25px;
+  height: 25px;
+}
+.tab-btn:hover {
+  background-color: #262C58;
+}
+
+.profile {
+  min-width: 180px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .avatar-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #ffff;
+  overflow: hidden;
+  background: url("../assets/men.png");
+  background-size: cover;
+  background-position: center;
+}
+.profile .name {
+  color: #ffff;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.profile .dropdown {
+  width: 15px;
+  height: 15px;
+  background: url("../assets/icons/caret-down.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .aside-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 10px;
+  padding-left: 18px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  align-items: center;
+}
+.sidebar .aside-btn:hover {
+  text-decoration: none;
+}
+.sidebar .aside-btn .aside-btn-icon {
+  width: 30px;
+  margin-right: 10px;
+}
+.sidebar .aside-btn .aside-btn-text {
+  font-size: 14px !important;
+  color: white;
+}
+
+.active {
+  background-color: #454C78;
+}
+
+.history {
+  padding: 50px;
+}
+.history .btn-action-group {
+  min-width: 500px;
+  max-width: 500px;
+  display: flex;
+  background-color: #262C58;
+  border-radius: 100px;
+  padding: 10px 10px;
+  position: relative;
+  overflow: hidden;
+}
+.history .btn-action-group button {
+  z-index: 3;
+  width: 50%;
+  background: transparent;
+  color: #ffff;
+}
+.history .btn-action-group .overlay-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFC107;
+  height: 100%;
+  width: 50%;
+  border-radius: 100px;
+  transition: all 0.5s ease 0s;
+}
+
+.transaction-container {
+  min-width: 600px;
+  height: 65vh;
+  background-color: #262C58;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+.transaction-container::-webkit-scrollbar {
+  width: 5px;
+}
+.transaction-container::-webkit-scrollbar-track {
+  background: #262C58;
+}
+.transaction-container::-webkit-scrollbar-thumb {
+  background: #FFC107;
+  border-radius: 10px;
+}
+.transaction-container::-webkit-scrollbar-thumb:hover {
+  background: #FFC107;
+}
+.transaction-container a {
+  text-decoration: none;
+}
+.transaction-container a:hover {
+  text-decoration: none;
+}
+.transaction-container .transaction {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: #454C78;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.transaction-container .transaction .gray {
+  background-color: #CFCFCF;
+  margin: 0px 20px;
+}
+.transaction-container .transaction h2, .transaction-container .transaction h3 {
+  color: #FFC107;
+}
+.transaction-container .transaction p {
+  margin-left: 32px;
+  color: #ffff;
+}
+
+/*# sourceMappingURL=history.css.map */
