@@ -25,8 +25,9 @@ const installExtensionAsync = async () => {
 // creating the mainWindow 
 function createWindow() {
     mainWindow = new BrowserWindow({
-        width: 1240,
-        height: 800,
+        minWidth: 1280,
+        minHeight: 800,
+
         autoHideMenuBar: true,
         webPreferences: {
             // This will allow to use node in the windowFile

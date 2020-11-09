@@ -1,0 +1,91 @@
+@import './variables';
+@import './main_container';
+@import './navbar';
+@import './sidebar';
+
+.security { 
+    padding-left : 50px ; 
+    padding-bottom: 50px ;
+    .pincode{ 
+        // background-color : yellow ; 
+        margin-top : 50px ; 
+        .prev-pincode { 
+            margin-left : 15px ;
+            h2 { 
+                color :$white ; 
+                font-weight: 600 ;
+            }
+            .pincode-form { 
+                display : flex ;
+                margin-top : 10px ;
+                input.prev-pincode-input { 
+                    background-color :  $secondary ; 
+                    color : $white ; 
+                    width : 45px ; 
+                    height: 60px ;
+                    border-radius: 10px ;
+                    outline : none ; 
+                    border : none ; 
+                    margin-right: 20px ;
+                    font-size: 40px ;
+                    padding : 12px ;
+                }
+            }
+        }
+
+        .new-pincode { 
+            background-color :  $secondary ;
+            width: 440px ;
+            min-height: 200px ;
+            margin-top : 50px ; 
+            border-radius: 10px ; 
+            padding: 15px ; 
+            h2 { 
+                margin-bottom: 10px ;
+                color :$white ; 
+                font-weight: 600 ;
+            }
+            input.next-pincode-input { 
+                background-color :  $primary ; 
+                color : $white ; 
+                width : 45px ; 
+                height: 60px ;
+                border-radius: 10px ;
+                outline : none ; 
+                border : none ; 
+                margin-right: 15px ;
+                font-size: 40px ;
+                padding : 12px ;
+            }
+        }
+    }
+    .t-w-v { 
+        // background-color : pink ; 
+        border-left : 2px solid $white ;
+        padding-top : 50px ; 
+        h2 { 
+            color : $white ; 
+            font-weight: 600 ;
+        }
+        .input-group { 
+            width : 450px ; 
+            height: 60px ;
+            overflow: hidden;
+            .input-group-text {
+                // font-size: $caption !important;
+                font-weight: 600 ;
+            }
+            input { 
+                height: 100% ;
+            }
+        }
+        button { 
+            color : $white ; 
+            background-color : $secondary ; 
+            height: 60px ;
+            color : $accent ;
+            margin-top : 40px ;  
+            width : 450px ; 
+        }
+    }
+}

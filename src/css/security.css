@@ -134,4 +134,87 @@
   background-color: #454C78;
 }
 
-/*# sourceMappingURL=dashboard.css.map */
+.security {
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.security .pincode {
+  margin-top: 50px;
+}
+.security .pincode .prev-pincode {
+  margin-left: 15px;
+}
+.security .pincode .prev-pincode h2 {
+  color: #ffff;
+  font-weight: 600;
+}
+.security .pincode .prev-pincode .pincode-form {
+  display: flex;
+  margin-top: 10px;
+}
+.security .pincode .prev-pincode .pincode-form input.prev-pincode-input {
+  background-color: #262C58;
+  color: #ffff;
+  width: 45px;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+  font-size: 40px;
+  padding: 12px;
+}
+.security .pincode .new-pincode {
+  background-color: #262C58;
+  width: 440px;
+  min-height: 200px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.security .pincode .new-pincode h2 {
+  margin-bottom: 10px;
+  color: #ffff;
+  font-weight: 600;
+}
+.security .pincode .new-pincode input.next-pincode-input {
+  background-color: #454C78;
+  color: #ffff;
+  width: 45px;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-right: 15px;
+  font-size: 40px;
+  padding: 12px;
+}
+.security .t-w-v {
+  border-left: 2px solid #ffff;
+  padding-top: 50px;
+}
+.security .t-w-v h2 {
+  color: #ffff;
+  font-weight: 600;
+}
+.security .t-w-v .input-group {
+  width: 450px;
+  height: 60px;
+  overflow: hidden;
+}
+.security .t-w-v .input-group .input-group-text {
+  font-weight: 600;
+}
+.security .t-w-v .input-group input {
+  height: 100%;
+}
+.security .t-w-v button {
+  color: #ffff;
+  background-color: #262C58;
+  height: 60px;
+  color: #FFC107;
+  margin-top: 40px;
+  width: 450px;
+}
+
+/*# sourceMappingURL=security.css.map */

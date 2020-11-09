@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/security.css" />
 
     <title>Document</title>
 </head>
@@ -31,11 +31,15 @@
                     <img src="../assets/icons/bell.png" />
                 </a>
                 <span class="divider"> </span>
-                <div class="profile">
+                <div class="profile dropdown">
                     <span class="avatar-wrapper"></span>
                     <p class="caption name">John Doe</p>
-                    <div class='dropdown'>
-
+                    <button class='dropdown-btn' type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Profile settings</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
                     </div>
                 </div>
                 <!-- <span class="divider"> </span> -->
@@ -72,8 +76,50 @@
                     </a>
                 </div>
             </aside>
-            <section>
-                <h1> security </h1>
+            <section class="security row">
+                <div class="col-6 col-xs-6 pincode">
+                    <div class="prev-pincode">
+                        <h2>Enter your previous pincode </h2>
+                        <div class="pincode-form">
+                            <input class="prev-pincode-input" maxlength="1" />
+                            <input class="prev-pincode-input" maxlength="1" />
+                            <input class="prev-pincode-input" maxlength="1" />
+                            <input class="prev-pincode-input" maxlength="1" />
+                            <input class="prev-pincode-input" maxlength="1" />
+                            <input class="prev-pincode-input" maxlength="1" />
+                        </div>
+                    </div>
+                    <div class="new-pincode">
+                        <div class='mb-5'>
+                            <h2>Enter your new pincode</h2>
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                        </div>
+                        <div class="bottom">
+                            <h2>Re-enter to confirm </h2>
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                            <input class="next-pincode-input" maxlength="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xs-6 t-w-v">
+                    <h2>Enable two way verification</h2>
+                    <div class="input-group mt-5">
+                        <div class="input-group-prepend">
+                            <p class="input-group-text">+92</p>
+                        </div>
+                        <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="1234567">
+                    </div>
+                    <button class="btn-lg btn-block"> Send Verification Code </button>
+                </div>
             </section>
         </main>
     </div>

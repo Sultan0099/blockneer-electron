@@ -9,6 +9,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
+    "dev": "npm run watch:sass & npm run start",
     "watch:sass": "sass --watch src/scss:src/css"
   },
   "author": "Sultan Ali",
