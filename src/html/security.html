@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/security.css" />
+    <title>Blockneer</title>
 
-    <title>Document</title>
 </head>
 
 <body>
@@ -109,6 +109,7 @@
                             <input class="next-pincode-input" maxlength="1" />
                         </div>
                     </div>
+                    <button id="new-pincode"> Don't have pincode </button>
                 </div>
                 <div class="col-6 col-xs-6 t-w-v">
                     <h2>Enable two way verification</h2>
@@ -118,7 +119,7 @@
                         </div>
                         <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="1234567">
                     </div>
-                    <button class="btn-lg btn-block"> Send Verification Code </button>
+                    <button class="btn-lg btn-block" id="send-ver-code"> Send Verification Code </button>
                 </div>
             </section>
         </main>
@@ -129,6 +130,8 @@
     <script src="../bootstrap/js/popper.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/sidebar.js"></script>
+
+    <script src="../js/security.js"></script>
 
 </body>
 

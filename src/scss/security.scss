@@ -58,6 +58,13 @@
                 padding : 12px ;
             }
         }
+        button#new-pincode { 
+            background : transparent ;
+            float : right ; 
+            margin-right: 50px ;
+            color : $accent ; 
+            text-decoration: underline;
+        }
     }
     .t-w-v { 
         // background-color : pink ; 

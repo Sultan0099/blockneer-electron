@@ -1,0 +1,49 @@
+body {
+  background-color: #262C58;
+}
+
+.form-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+.form-wrapper h2 {
+  color: #FFC107;
+  font-weight: 500;
+}
+.form-wrapper .new-pincode {
+  background-color: #262C58;
+  width: 440px;
+  min-height: 200px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.form-wrapper .new-pincode h2 {
+  margin-bottom: 10px;
+  color: #ffff;
+  font-weight: 600;
+}
+.form-wrapper .new-pincode input.next-pincode-input {
+  background-color: #454C78;
+  color: #ffff;
+  width: 45px;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-right: 15px;
+  font-size: 40px;
+  padding: 12px;
+}
+.form-wrapper button {
+  background: #454C78;
+  margin-right: 50px;
+  color: #FFC107;
+  margin-top: 20px;
+  height: 60px;
+  width: 90%;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=newpincode.css.map */

@@ -189,6 +189,13 @@
   font-size: 40px;
   padding: 12px;
 }
+.security .pincode button#new-pincode {
+  background: transparent;
+  float: right;
+  margin-right: 50px;
+  color: #FFC107;
+  text-decoration: underline;
+}
 .security .t-w-v {
   border-left: 2px solid #ffff;
   padding-top: 50px;

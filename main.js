@@ -1,10 +1,10 @@
 const electron = require('electron');
-const { app, BrowserWindow } = electron;
+const { app, BrowserWindow, ipcMain } = electron;
 const isDev = require('electron-is-dev');
 const path = require("path");
 const url = require('url');
 
-let mainWindow;
+let mainWindow, newPincodeWin, verificationCodeWin;
 
 // installing extension in electron
 const installExtensionAsync = async () => {
@@ -27,11 +27,13 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         minWidth: 1280,
         minHeight: 800,
+        title: "Blockneer",
 
         autoHideMenuBar: true,
         webPreferences: {
             // This will allow to use node in the windowFile
             nodeIntegration: true,
+            enableRemoteModule: true,
         }
     })
     mainWindow.loadURL(
@@ -43,10 +45,82 @@ function createWindow() {
     )
 
     mainWindow.on('close', () => mainWindow === null);
-
-
 }
 
+/*
+    ----------------------
+    @ window for pin code
+    ----------------------
+*/
+
+function createNewPincodeWin() {
+    if (!newPincodeWin) {
+        newPincodeWin = new BrowserWindow({
+            width: 500,
+            height: 600,
+            title: "New Pincode",
+            hasShadow: true,
+            webPreferences: {
+                nodeIntegration: true,
+                enableRemoteModule: true,
+            },
+        })
+        newPincodeWin.removeMenu();
+        newPincodeWin.minimizable = false;
+        newPincodeWin.maximizable = false;
+
+        newPincodeWin.loadURL(url.format({
+            pathname: path.join(__dirname, 'src', 'html', 'newPincode.html'),
+            format: 'file',
+            slashes: true
+        }))
+
+    } else return;
+
+    newPincodeWin.on('close', () => newPincodeWin = null)
+}
+
+/*
+    ------------------------------
+    @ window for verification code
+    ------------------------------
+*/
+
+function createVerCodeWin() {
+    if (!verificationCodeWin) {
+        verificationCodeWin = new BrowserWindow({
+            width: 500,
+            height: 600,
+            title: "Verify Code",
+            hasShadow: true,
+            webPreferences: {
+                nodeIntegration: true,
+                enableRemoteModule: true,
+            },
+        })
+        verificationCodeWin.removeMenu();
+        verificationCodeWin.minimizable = false;
+        verificationCodeWin.maximizable = false;
+
+        verificationCodeWin.loadURL(url.format({
+            pathname: path.join(__dirname, 'src', 'html', 'verificationCode.html'),
+            format: 'file',
+            slashes: true
+        }))
+
+    } else return;
+
+    verificationCodeWin.on('close', () => verificationCodeWin = null)
+}
+
+ipcMain.on('create:window', (e, winName) => {
+    console.log(winName);
+    if (winName === 'new-pincode-window') {
+        createNewPincodeWin();
+    } else if (winName === "new-verification-win") {
+        createVerCodeWin();
+    }
+})
 
 
 // Load window when app is ready in

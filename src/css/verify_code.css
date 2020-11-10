@@ -1,0 +1,41 @@
+body {
+  background-color: #262C58;
+}
+
+.verify-code-wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+.verify-code-wrapper h2 {
+  text-align: center;
+  color: #FFC107;
+  font-weight: 600;
+}
+.verify-code-wrapper .verify-code-input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.verify-code-wrapper .verify-code-input-wrapper input {
+  background-color: #454C78;
+  color: #ffff;
+  width: 50px;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  font-size: 40px;
+  padding: 12px;
+}
+.verify-code-wrapper button {
+  margin-top: 20px;
+  background-color: #454C78;
+  color: #FFC107;
+  width: 80%;
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=verify_code.css.map */
