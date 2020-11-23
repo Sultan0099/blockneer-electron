@@ -4,7 +4,7 @@ const isDev = require('electron-is-dev');
 const path = require("path");
 const url = require('url');
 
-let mainWindow, newPincodeWin, verificationCodeWin;
+let mainWindow, newPincodeWin, verificationCodeWin, contactUsWin;
 
 // installing extension in electron
 const installExtensionAsync = async () => {
@@ -112,6 +112,38 @@ function createVerCodeWin() {
 
     verificationCodeWin.on('close', () => verificationCodeWin = null)
 }
+/*
+    ------------------------------
+    @ window for contact us 
+    ------------------------------
+*/
+
+function createContactUsWin() {
+    if (!contactUsWin) {
+        contactUsWin = new BrowserWindow({
+            width: 600,
+            height: 700,
+            title: "Verify Code",
+            hasShadow: true,
+            webPreferences: {
+                nodeIntegration: true,
+                enableRemoteModule: true,
+            },
+        })
+        contactUsWin.removeMenu();
+        contactUsWin.minimizable = false;
+        contactUsWin.maximizable = false;
+
+        contactUsWin.loadURL(url.format({
+            pathname: path.join(__dirname, 'src', 'html', 'contactForm.html'),
+            format: 'file',
+            slashes: true
+        }))
+
+    } else return;
+
+    contactUsWin.on('close', () => contactUsWin = null)
+}
 
 ipcMain.on('create:window', (e, winName) => {
     console.log(winName);
@@ -119,6 +151,8 @@ ipcMain.on('create:window', (e, winName) => {
         createNewPincodeWin();
     } else if (winName === "new-verification-win") {
         createVerCodeWin();
+    } else if (winName === "contact-us-win") {
+        createContactUsWin();
     }
 })
 

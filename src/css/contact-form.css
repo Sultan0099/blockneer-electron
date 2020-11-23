@@ -1,0 +1,29 @@
+body {
+  background-color: #262C58;
+}
+
+.contact-form-wrapper {
+  padding: 30px;
+}
+.contact-form-wrapper .form-group label {
+  color: #ffff;
+}
+.contact-form-wrapper .form-group input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #ffff;
+  color: #ffff;
+  font-size: 14px !important;
+  padding-left: 0px;
+}
+.contact-form-wrapper .form-group textarea {
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.contact-form-wrapper button {
+  background-color: #454C78;
+  color: #FFC107;
+}
+
+/*# sourceMappingURL=contact-form.css.map */

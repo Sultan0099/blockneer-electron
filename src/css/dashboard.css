@@ -106,7 +106,7 @@
   display: flex;
   flex-direction: column;
 }
-.sidebar .aside-btn {
+.sidebar .aside-btn, .sidebar .aside-btn-contact-us {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -118,20 +118,94 @@
   text-decoration: none;
   align-items: center;
 }
-.sidebar .aside-btn:hover {
+.sidebar .aside-btn:hover, .sidebar .aside-btn-contact-us:hover {
   text-decoration: none;
 }
-.sidebar .aside-btn .aside-btn-icon {
+.sidebar .aside-btn .aside-btn-icon, .sidebar .aside-btn-contact-us .aside-btn-icon {
   width: 30px;
   margin-right: 10px;
 }
-.sidebar .aside-btn .aside-btn-text {
+.sidebar .aside-btn .aside-btn-text, .sidebar .aside-btn-contact-us .aside-btn-text {
   font-size: 14px !important;
   color: white;
 }
 
 .active {
   background-color: #454C78;
+}
+
+.dashboard-wrapper {
+  display: flex;
+}
+.dashboard-wrapper .left {
+  width: 60%;
+  height: 100vh;
+}
+.dashboard-wrapper .left .top {
+  height: 75vh;
+  display: flex;
+}
+.dashboard-wrapper .left .top .left {
+  width: 60%;
+  height: 100%;
+}
+.dashboard-wrapper .left .top .left .circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 0px auto;
+  background-color: #262C58;
+  border: 30px solid #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-wrapper .left .top .left .circle h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 50px !important;
+}
+.dashboard-wrapper .left .top .left .circle h2 {
+  color: #ffff;
+  font-weight: 500;
+  font-size: 50px !important;
+  margin-top: 5px;
+}
+.dashboard-wrapper .left .top .right {
+  width: 40%;
+  height: 100%;
+}
+.dashboard-wrapper .left .top .right > .top {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+}
+.dashboard-wrapper .left .top .right > .top div {
+  margin: 0px auto;
+  height: 60%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #262C58;
+}
+.dashboard-wrapper .left .top .right > .bottom {
+  width: 100%;
+  height: 70%;
+  background-color: red;
+}
+.dashboard-wrapper .left .bottom {
+  height: 25vh;
+  width: 100%;
+  background-color: lightblue;
+}
+.dashboard-wrapper .right {
+  width: 40%;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,34 @@
+@import './variables';
+
+body { 
+    background-color :  $secondary ;
+}
+
+.contact-form-wrapper { 
+    padding : 30px ; 
+
+    .form-group { 
+        label { 
+            color : $white ;
+
+        }
+        input { 
+            background-color :  transparent ; 
+            border:  none ;
+            border-radius: 0px ;
+            border-bottom: 1px solid $white ;
+            color : $white  ;
+            font-size: $caption ;
+            padding-left: 0px ;
+        }
+        textarea { 
+            height: 150px ;
+            background-color :rgba($white , 0.8);
+        }
+    }
+
+    button { 
+        background-color: $primary ;
+        color : $accent ; 
+    }
+}

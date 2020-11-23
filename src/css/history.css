@@ -106,7 +106,7 @@
   display: flex;
   flex-direction: column;
 }
-.sidebar .aside-btn {
+.sidebar .aside-btn, .sidebar .aside-btn-contact-us {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -118,14 +118,14 @@
   text-decoration: none;
   align-items: center;
 }
-.sidebar .aside-btn:hover {
+.sidebar .aside-btn:hover, .sidebar .aside-btn-contact-us:hover {
   text-decoration: none;
 }
-.sidebar .aside-btn .aside-btn-icon {
+.sidebar .aside-btn .aside-btn-icon, .sidebar .aside-btn-contact-us .aside-btn-icon {
   width: 30px;
   margin-right: 10px;
 }
-.sidebar .aside-btn .aside-btn-text {
+.sidebar .aside-btn .aside-btn-text, .sidebar .aside-btn-contact-us .aside-btn-text {
   font-size: 14px !important;
   color: white;
 }
